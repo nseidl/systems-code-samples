@@ -21,3 +21,5 @@ Homework 6: Implement Sample Sort with multiple threads.
 Homework 7: Implement a memory allocator using the free list strategy.
 
 Challenge 02: Implement a multi-threaded memory allocator, beat standard malloc for certain test cases.
+
+Challenge 03: Implement a basic filesystem using FUSE. Designed absed on ext2.
