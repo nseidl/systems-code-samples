@@ -1,0 +1,29 @@
+Advantages:
+- Files has 10 direct blocks, and can use indirect block if needed
+- All times update and display correctly
+- File (and directory) permissions mirror those of true unix systems
+- Can potentially use disk sizes > 1Mb (however the 1Mb limit is hardcoded 
+  currently)
+
+Disadvantages:
+- No ../ directory for root inode
+- Doesn't error if filesystem is full
+
+Future Improvements:
+- ../ directory for root inode
+- Handle error if filesystem is full and a write is requested
+- Symbolic links
+- Remove hardcoded disk size limit
+
+Completed Features:
+- Can touch files anywhere, even in nested directories
+- Can mkdir directories anywhere, even in nested directories
+- Can remove files from anywhere, even in nested directories
+- Can remove directories, as long as lowest level directory is specified
+- Can rename/move files properly (with data intact)
+- Can copy file information correctly
+- Can make hard links
+- Can read and write from given offsets
+
+Missing Features:
+- None!
